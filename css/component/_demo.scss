@@ -1,0 +1,90 @@
+/* =========================================
+   VARIABLES
+========================================= */
+$white: #ffffff;
+$black: #000000;
+
+$backdrop-dark: rgba(15, 23, 42, 0.85);
+$glass-bg: rgba(255, 255, 255, 0.08);
+$glass-border: rgba(255, 255, 255, 0.15);
+$glass-hover: rgba(255, 255, 255, 0.25);
+$glass-soft: rgba(255, 255, 255, 0.12);
+
+$shadow-heavy: 0 40px 120px rgba(0, 0, 0, 0.6);
+$shadow-video: inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+  0 20px 60px rgba(0, 0, 0, 0.6);
+
+/* =========================================
+   MODAL BACKDROP
+========================================= */
+.ai-glass-modal {
+  .modal-backdrop {
+    background: $backdrop-dark;
+  }
+}
+
+/* =========================================
+   MODAL SHELL
+========================================= */
+.ai-glass-content {
+  position: relative;
+  padding: 28px;
+  border-radius: 22px;
+
+  background: $glass-bg;
+  backdrop-filter: blur(22px);
+  border: 1px solid $glass-border;
+
+  box-shadow: $shadow-heavy;
+}
+
+/* =========================================
+   TITLE BAR
+========================================= */
+.ai-glass-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 16px;
+
+  font-size: 15px;
+  font-weight: 600;
+  color: $white;
+}
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+.ai-glass-close {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  background: $glass-soft;
+  border: none;
+  color: $white;
+
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: $glass-hover;
+  }
+}
+
+/* =========================================
+   VIDEO FRAME
+========================================= */
+.ai-video-frame {
+  background: $black;
+  border-radius: 16px;
+  overflow: hidden;
+
+  box-shadow: $shadow-video;
+
+  iframe {
+    border: none;
+  }
+}

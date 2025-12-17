@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AI Chat is an AI chatbot that writes text. You can use it to write stories, messages, or programming code."
+    />
+    <meta name="robots" content="index,follow" />
+    <!-- title -->
+    <title>AI Chatbox - Analytics</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="" />
+
+    <!-- font-style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstarp 5-CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- bootsrap-5 icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-3 custom-navbar">
+      <div class="container d-flex align-items-center">
+        <!-- Brand -->
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="#"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <!-- <img
+            src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
+            width="26"
+          /> -->
+          <span class="brand-name text-gradient-2 fw-bold fs-3"
+            >AI ChatBot</span
+          >
+          <span class="brand-stars">
+            <span class="star-icon star-up">✦</span>
+            <span class="star-icon star-down">✦</span>
+          </span>
+        </a>
+
+        <!-- Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div
+          class="collapse navbar-collapse justify-content-end gap-5"
+          id="mainNav"
+          data-aos="fade-left"
+          data-aos-delay="150"
+        >
+          <ul class="navbar-nav align-items-lg-center gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link" href="../index-ai.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./features.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <!-- Resources Dropdown -->
+            <li class="nav-item custom-dropdown">
+              <a
+                href="javascript:void(0)"
+                class="nav-link dropdown-toggle-custom"
+              >
+                Resources
+                <span class="dropdown-arrow">▾</span>
+              </a>
+
+              <ul class="custom-dropdown-menu">
+                <li>
+                  <a href="./knowledge-base.html">Knowledge Base</a>
+                </li>
+                <li>
+                  <a href="./integration.html">Integrations</a>
+                </li>
+                <li>
+                  <a href="./visitor-insight.html">Visitor Insights</a>
+                </li>
+                <li>
+                  <a href="./analytics.html">Analytics and Dashboard</a>
+                </li>
+                <li>
+                  <a
+                    href="./context.html"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <span> Context </span>
+                    <span class="new-tag">New</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Right Side -->
+          <div
+            class="navbar-right ms-lg-5 d-flex align-items-center gap-4 mt-3 mt-lg-0"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <a href="#" class="nav-sales">Login</a>
+
+            <a href="./sign-up.html" class="base-button">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Real Dashboard Image -->
+    <section class="page-hero">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <div class="hero-layout">
+          <div class="hero-text">
+            <span class="hero-tag">
+              <i class="fas fa-chart-network"></i>
+              AI-Powered Analytics Platform
+            </span>
+            <h1 class="hero-heading">
+              Transform Chatbot Data into
+              <span class="highlight">Actionable Insights</span>
+            </h1>
+            <p class="hero-description mb-3">
+              Monitor, analyze, and optimize your AI chatbot performance with
+              our comprehensive analytics dashboard. Real-time metrics, detailed
+              reports, and predictive insights in one platform.
+            </p>
+            <div style="display: flex; gap: var(--spacing-md); flex-wrap: wrap">
+              <a href="#dashboards" class="base-button px-4 py-3">
+                <i class="fas fa-eye"></i>
+                View Dashboard
+              </a>
+              <a href="#" class="base-button-outline border px-4 py-3">
+                <i class="fas fa-play-circle"></i>
+                Watch Demo
+              </a>
+            </div>
+          </div>
+          <div class="hero-preview">
+            <img
+              src="https://www.chatbot.com/features/analytics/header-reports_huc11db454b0c370c3bce4ba400694c809_245023_1072x0_resize_lanczos_3.png"
+              alt="AI Analytics Dashboard"
+            />
+            <!-- <div class="preview-overlay">
+              <div class="video-btn">
+                <i class="fas fa-play"></i>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboard Metrics -->
+    <section class="metrics-area">
+      <div class="container">
+        <div class="area-header">
+          <h2 class="area-title">
+            Real-time Performance <span class="highlight">Metrics</span>
+          </h2>
+          <p class="area-subtitle">
+            Track your AI chatbot's performance with live data and insights
+          </p>
+        </div>
+
+        <div class="metrics-wrapper">
+          <div class="data-card">
+            <div class="card-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="card-value">1,248</div>
+            <div class="card-label">Active Conversations</div>
+            <div class="card-trend trend-positive">
+              <i class="fas fa-arrow-up"></i>
+              <span>12.5% increase from last week</span>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="card-icon">
+              <i class="fas fa-comment-dots"></i>
+            </div>
+            <div class="card-value">2,847</div>
+            <div class="card-label">Total Sessions Today</div>
+            <div class="card-trend trend-positive">
+              <i class="fas fa-arrow-up"></i>
+              <span>8.3% growth this week</span>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="card-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="card-value">1.25s</div>
+            <div class="card-label">Avg Response Time</div>
+            <div class="card-trend trend-negative">
+              <i class="fas fa-arrow-down"></i>
+              <span>15.2% faster responses</span>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="card-icon">
+              <i class="fas fa-coins"></i>
+            </div>
+            <div class="card-value">94.2%</div>
+            <div class="card-label">Success Rate</div>
+            <div class="card-trend trend-positive">
+              <i class="fas fa-arrow-up"></i>
+              <span>3.1% improvement</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real Dashboard Screenshots -->
+    <section id="dashboards" class="dashboards-area">
+      <div class="container">
+        <div class="area-header">
+          <h2 class="area-title">
+            Comprehensive <span class="highlight">Dashboard Views</span>
+          </h2>
+          <p class="area-subtitle">
+            Multiple perspectives to understand every aspect of your chatbot's
+            performance
+          </p>
+        </div>
+
+        <div class="dashboards-wrapper">
+          <div class="dashboard-preview-card">
+            <img
+              src="https://images.unsplash.com/photo-1663780852957-0e1f8bda3d0d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Conversation Analytics Dashboard"
+              class="preview-image"
+            />
+            <div class="preview-content">
+              <h3 class="preview-heading">Conversation Analytics</h3>
+              <p class="preview-text">
+                Real-time monitoring of all chat conversations with sentiment
+                analysis, intent recognition, and user satisfaction scores.
+              </p>
+            </div>
+          </div>
+
+          <div class="dashboard-preview-card">
+            <img
+              src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg"
+              alt="Performance Metrics Dashboard"
+              class="preview-image"
+            />
+            <div class="preview-content">
+              <h3 class="preview-heading">Performance Metrics</h3>
+              <p class="preview-text">
+                Detailed insights into response times, accuracy rates, and
+                overall chatbot performance across different channels.
+              </p>
+            </div>
+          </div>
+
+          <div class="dashboard-preview-card">
+            <img
+              src="https://images.pexels.com/photos/7793118/pexels-photo-7793118.jpeg"
+              alt="Cost & Usage Analytics"
+              class="preview-image"
+            />
+            <div class="preview-content">
+              <h3 class="preview-heading">Cost & Usage Analytics</h3>
+              <p class="preview-text">
+                Track token usage, API costs, and resource consumption with
+                detailed breakdowns and optimization suggestions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Chatbot in Action -->
+    <section class="ai-section">
+      <div class="container">
+        <div class="area-header">
+          <h2 class="area-title">
+            AI Chatbot <span class="highlight">In Action</span>
+          </h2>
+          <p class="area-subtitle">
+            See how intelligent chatbots interact with users and gather valuable
+            insights
+          </p>
+        </div>
+
+        <div class="ai-layout">
+          <div class="ai-visual">
+            <img
+              src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+              alt="AI Chatbot Interface"
+            />
+          </div>
+
+          <div class="ai-features">
+            <div class="feature-block">
+              <div class="feature-symbol">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="feature-details">
+                <h3>Natural Language Processing</h3>
+                <p>
+                  Advanced NLP algorithms that understand user intent and
+                  provide accurate, context-aware responses.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-block">
+              <div class="feature-symbol">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="feature-details">
+                <h3>Real-time Analytics</h3>
+                <p>
+                  Monitor conversations as they happen with live sentiment
+                  analysis and performance tracking.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-block">
+              <div class="feature-symbol">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="feature-details">
+                <h3>Machine Learning</h3>
+                <p>
+                  Self-improving algorithms that learn from every interaction to
+                  provide better responses over time.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-block">
+              <div class="feature-symbol">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="feature-details">
+                <h3>Enterprise Security</h3>
+                <p>
+                  Bank-level encryption and compliance with GDPR, HIPAA, and
+                  other regulatory standards.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <!-- <section class="cta-area">
+      <div class="container">
+        <h2 class="cta-heading">Ready to Transform Your Chatbot Analytics?</h2>
+        <p class="cta-text">
+          Join 2,500+ companies using our platform to gain deep insights into
+          their AI chatbot performance
+        </p>
+        <div class="cta-buttons">
+          <a href="#" class="action-btn">
+            <i class="fas fa-play-circle"></i>
+            Start Free Trial
+          </a>
+          <a href="#" class="action-btn outline">
+            <i class="fas fa-calendar"></i>
+            Schedule Demo
+          </a>
+          <a href="#" class="action-btn outline">
+            <i class="fas fa-file-alt"></i>
+            View Case Studies
+          </a>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="container">
+      <div
+        class="new-cta-section d-flex align-items-center justify-content-center rounded-5 p-5"
+      >
+        <div class="new-cta-content text-center">
+          <h2 class="new-cta-title">
+            Ready to Transform Your Chatbot Analytics?
+          </h2>
+          <p class="new-cta-subtitle">
+            Join 2,500+ companies using our platform to gain deep insights into
+            their AI chatbot performance
+          </p>
+
+          <div class="cta-buttons mt-4">
+            <a href="#" class="action-btn">
+              <i class="fas fa-play-circle"></i>
+              Start Free Trial
+            </a>
+            <a href="#" class="action-btn outline text-white">
+              <i class="fas fa-calendar"></i>
+              Schedule Demo
+            </a>
+            <a href="#" class="action-btn outline text-white">
+              <i class="fas fa-file-alt"></i>
+              View Case Studies
+            </a>
+          </div>
+        </div>
+
+        <!-- Floating circles -->
+        <div class="new-cta-shape new-cta-circle new-cta-circle-lg"></div>
+        <div class="new-cta-shape new-cta-circle new-cta-circle-md"></div>
+        <div class="new-cta-shape new-cta-circle new-cta-circle-sm"></div>
+
+        <!-- Floating plus icons -->
+        <div class="new-cta-shape new-cta-plus new-cta-plus-lg"></div>
+        <div class="new-cta-shape new-cta-plus new-cta-plus-md"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer py-5" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+        <!-- Top brand + tagline -->
+        <div
+          class="footer-top d-flex flex-column flex-md-row justify-content-between gap-3 pb-4"
+          data-aos="fade-up"
+          data-aos-delay="130"
+        >
+          <div>
+            <div
+              class="footer-brand d-flex align-items-center gap-2 mb-2"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              <!-- <div class="footer-logo-badge"></div> -->
+              <span class="brand-name text-gradient-2 fw-bold fs-3"
+                >AI ChatBot</span
+              >
+              <span class="brand-stars">
+                <span class="star-icon star-up">✦</span>
+                <span class="star-icon star-down">✦</span>
+              </span>
+            </div>
+
+            <p
+              class="footer-tagline mb-0"
+              data-aos="fade-up"
+              data-aos-delay="170"
+            >
+              The platform to build AI agents <br class="d-none d-md-block" />
+              that feel human
+            </p>
+          </div>
+        </div>
+
+        <hr class="footer-divider" data-aos="zoom-in" data-aos-delay="190" />
+
+        <!-- Link columns -->
+        <div class="row pt-4 pb-3 gy-4">
+          <div
+            class="col-6 col-md-2 flex-fill"
+            data-aos="fade-up"
+            data-aos-delay="210"
+          >
+            <h6 class="footer-heading">Company</h6>
+            <ul class="footer-links list-unstyled">
+              <li><a href="../index-ai.html">Home</a></li>
+              <li><a href="./contact-us.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-6 col-md-2 flex-fill"
+            data-aos="fade-up"
+            data-aos-delay="230"
+          >
+            <h6 class="footer-heading">Product</h6>
+            <ul class="footer-links list-unstyled">
+              <li><a href="./features.html">Features</a></li>
+              <li><a href="./integration.html">Integrations</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-6 col-md-2 flex-fill"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <h6 class="footer-heading">Resources</h6>
+            <ul class="footer-links list-unstyled">
+              <li><a href="./knowledge-base.html">Knowledge Base</a></li>
+              <li><a href="./visitor-insight.html">Visitor Insights</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-6 col-md-2 flex-fill"
+            data-aos="fade-up"
+            data-aos-delay="270"
+          >
+            <h6 class="footer-heading">Platform</h6>
+            <ul class="footer-links list-unstyled">
+              <li><a href="./analytics.html">Analytics & Dashboard</a></li>
+              <li><a href="./pricing.html">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-6 col-md-2 flex-fill"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <h6 class="footer-heading">Support</h6>
+            <ul class="footer-links list-unstyled">
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./sign-up.html">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom row -->
+        <div class="footer-bottom pt-3" data-aos="fade-up" data-aos-delay="320">
+          <p class="footer-copy mb-0 fw-bold text-center">
+            © 2025 AI Chatbot Private Limited
+          </p>
+        </div>
+        <div class="footer-bottom-image-wrapper">
+          <img
+            src="../assets/letsWorkTogether.png"
+            alt="Footer Decorative"
+            class="footer-bottom-image"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- script - File -->
+    <script src="../app.js"></script>
+
+    <!-- Carousel script -->
+  </body>
+</html>

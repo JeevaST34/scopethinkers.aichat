@@ -1,0 +1,83 @@
+.site-footer {
+  background-color: var(--color-white);
+  font-size: 0.9rem;
+
+  /* Brand Section */
+  .footer-logo-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    background: var(--color-primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--color-white);
+  }
+
+  .footer-brand-name {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--color-dark-blue);
+  }
+
+  .footer-tagline {
+    color: #000;
+  }
+
+  /* Divider */
+  .footer-divider {
+    margin: 0;
+    border-color: var(--color-light-gray);
+    opacity: 1;
+  }
+
+  /* Footer Columns */
+  .footer-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0.02em;
+    color: #aeb0b8;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-links {
+    li + li {
+      margin-top: 0.35rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #54565f;
+      font-size: 1rem;
+      font-weight: 500;
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  /* Bottom copyright text */
+  .footer-copy {
+    font-size: 0.8rem;
+    color: var(--color-gray);
+  }
+
+  /* Bottom decorative image */
+  .footer-bottom-image-wrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    overflow: hidden;
+
+    .footer-bottom-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      object-fit: cover;
+    }
+  }
+}

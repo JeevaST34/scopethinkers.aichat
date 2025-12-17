@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AI Chat is an AI chatbot that writes text. You can use it to write stories, messages, or programming code."
+    />
+    <meta name="robots" content="index,follow" />
+    <!-- title -->
+    <title>AI Chatbox - Knowledge-Base</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="" />
+
+    <!-- font-style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstarp 5-CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- bootsrap-5 icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-3 custom-navbar">
+      <div class="container d-flex align-items-center">
+        <!-- Brand -->
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="#"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <!-- <img
+            src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
+            width="26"
+          /> -->
+          <span class="brand-name text-gradient-2 fw-bold fs-3"
+            >AI ChatBot</span
+          >
+          <span class="brand-stars">
+            <span class="star-icon star-up">✦</span>
+            <span class="star-icon star-down">✦</span>
+          </span>
+        </a>
+
+        <!-- Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div
+          class="collapse navbar-collapse justify-content-end gap-5"
+          id="mainNav"
+          data-aos="fade-left"
+          data-aos-delay="150"
+        >
+          <ul class="navbar-nav align-items-lg-center gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link" href="../index-ai.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./features.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <!-- Resources Dropdown -->
+            <li class="nav-item custom-dropdown">
+              <a
+                href="javascript:void(0)"
+                class="nav-link dropdown-toggle-custom"
+              >
+                Resources
+                <span class="dropdown-arrow">▾</span>
+              </a>
+
+              <ul class="custom-dropdown-menu">
+                <li>
+                  <a href="./knowledge-base.html">Knowledge Base</a>
+                </li>
+                <li>
+                  <a href="./integration.html">Integrations</a>
+                </li>
+                <li>
+                  <a href="./visitor-insight.html">Visitor Insights</a>
+                </li>
+                <li>
+                  <a href="./analytics.html">Analytics and Dashboard</a>
+                </li>
+                <li>
+                  <a
+                    href="./context.html"
+                    class="d-flex align-items-center gap-2"
+                  >
+                    <span> Context </span>
+                    <span class="new-tag">New</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Right Side -->
+          <div
+            class="navbar-right ms-lg-5 d-flex align-items-center gap-4 mt-3 mt-lg-0"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <a href="#" class="nav-sales">Login</a>
+
+            <a href="./sign-up.html" class="base-button">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Background Elements -->
+    <!-- <div class="light-grid"></div> -->
+    <div class="particles" id="particles"></div>
+
+    <div class="pb-5">
+      <!-- Hero Section -->
+      <section class="knowledge-hero-section mb-5">
+        <div class="knowledge-hero-bg"></div>
+        <div class="knowledge-hero-pattern"></div>
+
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Left -->
+            <div class="col-lg-6">
+              <div class="knowledge-hero-content">
+                <span class="knowledge-hero-tag">AI-Powered Platform</span>
+                <h1 class="knowledge-hero-title">
+                  Intelligent Knowledge Management Platform
+                </h1>
+                <p class="knowledge-hero-subtitle mb-4">
+                  Centralize, tag, and access your documents instantly using
+                  AI-powered knowledge workflows and chatbot intelligence.
+                </p>
+
+                <div class="knowledge-hero-cta">
+                  <button
+                    class="btn btn-knowledge-primary knowledge-upload-btn"
+                  >
+                    <i class="fas fa-cloud-upload-alt me-2"></i> Upload
+                    Documents
+                  </button>
+                  <button
+                    class="btn btn-knowledge-secondary knowledge-demo-btn"
+                  >
+                    <i class="fas fa-play-circle me-2"></i> Watch Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right -->
+            <div class="col-lg-6">
+              <div class="knowledge-hero-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+                  class="knowledge-hero-image"
+                />
+
+                <div class="knowledge-floating one">
+                  <i class="fas fa-tags text-primary"></i>
+                  <span>Smart Tagging</span>
+                </div>
+
+                <div class="knowledge-floating two">
+                  <i class="fas fa-code-branch text-danger"></i>
+                  <span>Version Control</span>
+                </div>
+
+                <div class="knowledge-floating three">
+                  <i class="fas fa-search text-info"></i>
+                  <span>AI Search</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Dashboard -->
+      <div>
+        <!-- Left Stats Sidebar -->
+        <div class="row container mb-3">
+          <!-- Card 1: Documents Processed -->
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="glass-card card-1 mb-3 border">
+              <div class="gradient-overlay"></div>
+              <div class="card-content">
+                <div class="icon-wrapper">
+                  <i class="fas fa-file-alt"></i>
+                </div>
+
+                <div class="stat-value">12.8K</div>
+                <div class="stat-label">Documents Processed</div>
+
+                <div class="trend-indicator">
+                  <i class="fas fa-arrow-up"></i>
+                  <span>+24% this month</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: AI Accuracy Rate -->
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="glass-card card-2 mb-3 border">
+              <div class="gradient-overlay"></div>
+              <div class="card-content">
+                <div class="icon-wrapper">
+                  <i class="fas fa-brain"></i>
+                </div>
+
+                <div class="stat-value">98.7%</div>
+                <div class="stat-label">AI Accuracy Rate</div>
+
+                <div class="trend-indicator">
+                  <i class="fas fa-star"></i>
+                  <span>Premium Performance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Average Query Time -->
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="glass-card card-3 mb-3 border">
+              <div class="gradient-overlay"></div>
+              <div class="card-content">
+                <div class="icon-wrapper">
+                  <i class="fas fa-bolt"></i>
+                </div>
+
+                <div class="stat-value">2.4s</div>
+                <div class="stat-label">Average Query Time</div>
+
+                <div class="trend-indicator">
+                  <i class="fas fa-arrow-down"></i>
+                  <span>0.3s faster</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Knowledge Database -->
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="glass-card card-4 mb-3 border">
+              <div class="gradient-overlay"></div>
+              <div class="card-content">
+                <div class="icon-wrapper">
+                  <i class="fas fa-server"></i>
+                </div>
+
+                <div class="stat-value">256TB</div>
+                <div class="stat-label">Knowledge Database</div>
+
+                <div class="trend-indicator">
+                  <i class="fas fa-chart-bar"></i>
+                  <span>+12% growth</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content container">
+          <!-- Upload Module -->
+          <div class="feature-module">
+            <div class="module-header">
+              <div class="module-icon">
+                <i class="fas fa-cloud-upload-alt"></i>
+              </div>
+              <div>
+                <h2 class="module-title">Intelligent Upload</h2>
+                <p class="module-subtitle">
+                  Smart document processing with AI analysis
+                </p>
+              </div>
+            </div>
+            <div class="module-body">
+              <div class="upload-zone-light" id="uploadZone">
+                <div class="upload-icon-light">
+                  <i class="fas fa-arrow-up-from-bracket"></i>
+                </div>
+                <h3
+                  style="
+                    color: var(--color-primary-dark);
+                    margin-bottom: var(--spacing-xs);
+                  "
+                >
+                  Drop files or click to upload
+                </h3>
+                <p style="color: var(--color-gray-dark)">
+                  Supports 50+ file formats with instant AI analysis
+                </p>
+              </div>
+              <div class="neural-visual-light" id="neuralVisual"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 rounded-3 d-flex align-items-center">
+              <img src="../assets/knowldge-base-1.png" alt="banner" />
+            </div>
+            <div class="col-lg-6">
+              <!-- Tagging Module -->
+              <div class="feature-module">
+                <div class="module-header">
+                  <div class="module-icon">
+                    <i class="fas fa-tags"></i>
+                  </div>
+                  <div>
+                    <h2 class="module-title">Smart Tagging</h2>
+                    <p class="module-subtitle">
+                      AI-powered semantic categorization
+                    </p>
+                  </div>
+                </div>
+                <div class="module-body">
+                  <div class="tag-matrix-light" id="tagMatrix">
+                    <!-- Tags will be generated by JavaScript -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <!-- AI Intelligence Module -->
+              <div class="feature-module">
+                <div class="module-header">
+                  <div class="module-icon">
+                    <i class="fas fa-robot"></i>
+                  </div>
+                  <div>
+                    <h2 class="module-title">AI Intelligence</h2>
+                    <p class="module-subtitle">
+                      Advanced document analysis and insights
+                    </p>
+                  </div>
+                </div>
+                <div class="module-body">
+                  <div class="ai-brain-light">
+                    <div class="brain-core-light">
+                      <i class="fas fa-brain"></i>
+                    </div>
+                  </div>
+                  <div class="ai-features-light">
+                    <div class="ai-feature-item">
+                      <i class="fas fa-search"></i>
+                      <span>Semantic Analysis</span>
+                    </div>
+                    <div class="ai-feature-item">
+                      <i class="fas fa-project-diagram"></i>
+                      <span>Pattern Recognition</span>
+                    </div>
+                    <div class="ai-feature-item">
+                      <i class="fas fa-sitemap"></i>
+                      <span>Cross-Document Synthesis</span>
+                    </div>
+                    <div class="ai-feature-item">
+                      <i class="fas fa-chart-line"></i>
+                      <span>Predictive Insights</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 rounded-3 d-flex align-items-center">
+              <div>
+                <img
+                  src="../assets/knowlwdge-base-2.png"
+                  alt="banner"
+                  class="mx-auto rounded-3"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Version Control Module -->
+          <div class="feature-module">
+            <div class="module-header">
+              <div class="module-icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <div>
+                <h2 class="module-title">Version Control</h2>
+                <p class="module-subtitle">
+                  Complete document history and tracking
+                </p>
+              </div>
+            </div>
+            <div class="module-body">
+              <div class="version-timeline-light">
+                <div class="version-node-light">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      margin-bottom: var(--spacing-xs);
+                    "
+                  >
+                    <strong style="color: var(--color-primary)">v3.2.1</strong>
+                    <span style="color: var(--color-gray); font-size: 0.9rem">
+                      <i class="far fa-clock"></i> Now
+                    </span>
+                  </div>
+                  <p style="color: var(--color-gray-dark)">
+                    Enhanced security features • Improved indexing algorithm
+                  </p>
+                </div>
+                <div class="version-node-light">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      margin-bottom: var(--spacing-xs);
+                    "
+                  >
+                    <strong style="color: var(--color-primary)">v3.2.0</strong>
+                    <span style="color: var(--color-gray); font-size: 0.9rem">
+                      <i class="far fa-clock"></i> 2 hours ago
+                    </span>
+                  </div>
+                  <p style="color: var(--color-gray-dark)">
+                    Multi-modal AI integration • Cross-platform synchronization
+                  </p>
+                </div>
+                <div class="version-node-light">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      margin-bottom: var(--spacing-xs);
+                    "
+                  >
+                    <strong style="color: var(--color-primary)">v3.1.4</strong>
+                    <span style="color: var(--color-gray); font-size: 0.9rem">
+                      <i class="far fa-clock"></i> 1 day ago
+                    </span>
+                  </div>
+                  <p style="color: var(--color-gray-dark)">
+                    Semantic search enhancement • Performance optimization
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer py-5" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+        <!-- Top brand + tagline -->
+        <div
+          class="footer-top d-flex flex-column flex-md-row justify-content-between gap-3 pb-4"
+          data-aos="fade-up"
+          data-aos-delay="130"
+        >
+          <div>
+            <div
+              class="footer-brand d-flex align-items-center gap-2 mb-2"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              <!-- <div class="footer-logo-badge"></div> -->
+              <span class="brand-name text-gradient-2 fw-bold fs-3"
+                >AI ChatBot</span
+              >
+              <span class="brand-stars">
+                <span class="star-icon star-up">✦</span>
+                <span class="star-icon star-down">✦</span>
+              </span>
+            </div>
+
+            <p
+              class="footer-tagline mb-0"
+              data-aos="fade-up"
+              data-aos-delay="170"
+            >
+              The platform to build AI agents <br class="d-none d-md-block" />
+              that feel human
+            </p>
+          </div>
+        </div>
+
+        <hr class="footer-divider" data-aos="zoom-in" data-aos-delay="190" />
+
+        <!-- Link columns -->
+        <div class="row pt-4 pb-3 gy-4">
+          <div
+            class="col-6 col-md-2 flex-fill"
+            data-aos="fade-up"
+            data-aos-delay="210"
+          >
+            <h6 class="footer-heading">Company</h6>
+            <ul class="footer-links list-unstyled">
+              <li><a href="../index-ai.html">Home</a></li>
+              <li><a href="./contact-us.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-6 col-md-2 flex-fill"
+            data-aos="fade-up"
+            data-aos-delay="230"
+          >
+            <h6 class="footer-heading">Product</h6>
+            <ul class="footer-links list-unstyled">
+              <li><a href="./features.html">Features</a></li>
+              <li><a href="./integration.html">Integrations</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-6 col-md-2 flex-fill"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <h6 class="footer-heading">Resources</h6>
+            <ul class="footer-links list-unstyled">
+              <li><a href="./knowledge-base.html">Knowledge Base</a></li>
+              <li><a href="./visitor-insight.html">Visitor Insights</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-6 col-md-2 flex-fill"
+            data-aos="fade-up"
+            data-aos-delay="270"
+          >
+            <h6 class="footer-heading">Platform</h6>
+            <ul class="footer-links list-unstyled">
+              <li><a href="./analytics.html">Analytics & Dashboard</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-6 col-md-2 flex-fill"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <h6 class="footer-heading">Support</h6>
+            <ul class="footer-links list-unstyled">
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./sign-up.html">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom row -->
+        <div class="footer-bottom pt-3" data-aos="fade-up" data-aos-delay="320">
+          <p class="footer-copy mb-0 fw-bold text-center">
+            © 2025 AI Chatbot Private Limited
+          </p>
+        </div>
+        <div class="footer-bottom-image-wrapper">
+          <img
+            src="../assets/letsWorkTogether.png"
+            alt="Footer Decorative"
+            class="footer-bottom-image"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- script - File -->
+    <script src="../app.js"></script>
+    <script>
+      // Create neural network visualization
+      const neuralVisual = document.getElementById("neuralVisual");
+      const layers = [3, 5, 7, 5, 3];
+      const neuronPositions = [];
+
+      layers.forEach((layerSize, layerIndex) => {
+        for (let i = 0; i < layerSize; i++) {
+          const neuron = document.createElement("div");
+          neuron.className = "neuron-light";
+          const x = (layerIndex + 1) * (100 / (layers.length + 1));
+          const y = (i + 1) * (100 / (layerSize + 1));
+          neuron.style.left = `${x}%`;
+          neuron.style.top = `${y}%`;
+          neuron.style.animationDelay = `${Math.random() * 2}s`;
+          neuralVisual.appendChild(neuron);
+          neuronPositions.push({ x, y, layer: layerIndex });
+        }
+      });
+
+      // Create connections
+      neuronPositions.forEach((neuron, i) => {
+        neuronPositions.forEach((target, j) => {
+          if (i !== j && Math.abs(neuron.layer - target.layer) === 1) {
+            if (Math.random() > 0.7) {
+              const connection = document.createElement("div");
+              connection.className = "connection-light";
+              const length = Math.sqrt(
+                Math.pow(target.x - neuron.x, 2) +
+                  Math.pow(target.y - neuron.y, 2)
+              );
+              const angle =
+                (Math.atan2(target.y - neuron.y, target.x - neuron.x) * 180) /
+                Math.PI;
+              connection.style.width = `${length}%`;
+              connection.style.left = `${neuron.x}%`;
+              connection.style.top = `${neuron.y}%`;
+              connection.style.transform = `rotate(${angle}deg)`;
+              connection.style.opacity = Math.random() * 0.2 + 0.1;
+              neuralVisual.appendChild(connection);
+            }
+          }
+        });
+      });
+
+      // Create tag matrix
+      const tagMatrix = document.getElementById("tagMatrix");
+      const tags = [
+        "Documents",
+        "Research",
+        "Analysis",
+        "Data",
+        "Security",
+        "Cloud",
+        "Patterns",
+        "Learning",
+        "AI",
+        "Intelligence",
+
+        "Index",
+        "Archive",
+        "Knowledge",
+      ];
+
+      tags.forEach((tag) => {
+        const cell = document.createElement("div");
+        cell.className = "matrix-cell-light";
+        cell.textContent = tag;
+        cell.addEventListener("click", () => {
+          cell.classList.toggle("active");
+        });
+        tagMatrix.appendChild(cell);
+      });
+
+      // Upload zone interaction
+      const uploadZone = document.getElementById("uploadZone");
+      uploadZone.addEventListener("click", () => {
+        uploadZone.innerHTML = `
+                <div class="upload-icon-light">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </div>
+                <h3 style="color: var(--color-primary-dark); margin-bottom: var(--spacing-xs);">
+                    Processing Documents...
+                </h3>
+                <p style="color: var(--color-gray-dark);">
+                    AI is analyzing your documents
+                </p>
+            `;
+        uploadZone.style.background = "var(--color-primary-lighter)";
+        uploadZone.style.borderColor = "var(--color-primary)";
+
+        setTimeout(() => {
+          uploadZone.innerHTML = `
+                    <div class="upload-icon-light">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h3 style="color: var(--color-primary-dark); margin-bottom: var(--spacing-xs);">
+                        Upload Complete!
+                    </h3>
+                    <p style="color: var(--color-gray-dark);">
+                        Documents analyzed and indexed
+                    </p>
+                `;
+          uploadZone.style.background = "var(--color-primary-lighter)";
+          uploadZone.style.borderColor = "var(--color-primary)";
+
+          // Reset after 3 seconds
+          setTimeout(() => {
+            uploadZone.innerHTML = `
+                        <div class="upload-icon-light">
+                            <i class="fas fa-arrow-up-from-bracket"></i>
+                        </div>
+                        <h3 style="color: var(--color-primary-dark); margin-bottom: var(--spacing-xs);">
+                            Drop files or click to upload
+                        </h3>
+                        <p style="color: var(--color-gray-dark);">
+                            Supports 50+ file formats with instant AI analysis
+                        </p>
+                    `;
+            uploadZone.style.background = "";
+            uploadZone.style.borderColor = "";
+          }, 3000);
+        }, 2000);
+      });
+
+      // Interactive tag matrix
+      let activeTag = null;
+      setInterval(() => {
+        if (activeTag) {
+          activeTag.classList.remove("active");
+        }
+        const randomCell =
+          tagMatrix.children[
+            Math.floor(Math.random() * tagMatrix.children.length)
+          ];
+        randomCell.classList.add("active");
+        activeTag = randomCell;
+
+        // Remove after a moment
+        setTimeout(() => {
+          randomCell.classList.remove("active");
+        }, 1000);
+      }, 3000);
+
+      // Add hover effect to AI features
+      document.querySelectorAll(".ai-feature-item").forEach((item) => {
+        item.addEventListener("mouseenter", function () {
+          this.style.transform = "translateX(8px)";
+        });
+
+        item.addEventListener("mouseleave", function () {
+          this.style.transform = "translateX(0)";
+        });
+      });
+    </script>
+    <script>
+      // Smooth number counting animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const statValues = document.querySelectorAll(".stat-value");
+
+        statValues.forEach((stat) => {
+          const originalText = stat.textContent;
+          const match = originalText.match(/([\d\.]+)(.*)/);
+
+          if (match) {
+            const number = parseFloat(match[1]);
+            const suffix = match[2];
+
+            stat.textContent = "0" + suffix;
+
+            let start = 0;
+            const end = number;
+            const duration = 1800;
+            const startTime = Date.now();
+
+            const animate = () => {
+              const currentTime = Date.now();
+              const elapsed = currentTime - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+
+              // Smooth easing
+              const easeOutExpo = 1 - Math.pow(2, -10 * progress);
+              const currentValue = start + (end - start) * easeOutExpo;
+
+              // Format based on value
+              let displayValue;
+              if (suffix === "K") {
+                displayValue = (currentValue / 1000).toFixed(1);
+                if (displayValue.endsWith(".0")) {
+                  displayValue = displayValue.slice(0, -2);
+                }
+                displayValue += "K";
+              } else if (suffix === "TB") {
+                displayValue = Math.round(currentValue);
+                displayValue += "TB";
+              } else if (suffix === "%") {
+                displayValue = currentValue.toFixed(1);
+                if (displayValue.endsWith(".0")) {
+                  displayValue = displayValue.slice(0, -2);
+                }
+                displayValue += "%";
+              } else if (suffix === "s") {
+                displayValue = currentValue.toFixed(1);
+                displayValue += "s";
+              }
+
+              stat.textContent = displayValue;
+
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              }
+            };
+
+            setTimeout(animate, 300);
+          }
+        });
+
+        // Interactive hover effects
+        const cards = document.querySelectorAll(".glass-card");
+
+        cards.forEach((card) => {
+          card.addEventListener("mouseenter", function () {
+            const icon = this.querySelector(".icon-wrapper");
+            if (icon) {
+              icon.style.transform = "scale(1.08) rotate(5deg)";
+            }
+          });
+
+          card.addEventListener("mouseleave", function () {
+            const icon = this.querySelector(".icon-wrapper");
+            if (icon) {
+              icon.style.transform = "scale(1) rotate(0deg)";
+            }
+          });
+        });
+
+        // Add click effect
+        cards.forEach((card) => {
+          card.addEventListener("click", function () {
+            this.style.transform = "scale(0.98)";
+            setTimeout(() => {
+              this.style.transform = "translateY(-5px)";
+            }, 150);
+          });
+        });
+      });
+    </script>
+    <script>
+      document
+        .querySelector(".knowledge-upload-btn")
+        .addEventListener("click", function () {
+          this.innerHTML =
+            '<i class="fas fa-spinner fa-spin me-2"></i> Uploading...';
+          this.disabled = true;
+
+          setTimeout(() => {
+            this.innerHTML = '<i class="fas fa-check me-2"></i> Uploaded!';
+            this.disabled = false;
+          }, 1800);
+        });
+
+      document
+        .querySelector(".knowledge-demo-btn")
+        .addEventListener("click", () => {
+          alert("Demo modal opens here.");
+        });
+    </script>
+    <!-- Carousel script -->
+  </body>
+</html>
