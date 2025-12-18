@@ -1781,7 +1781,7 @@ svg {
 /* ================= BASE ================= */
 * {
   box-sizing: border-box;
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .sign-body {
@@ -5536,6 +5536,16 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .new-cta-section {
+    padding: 0.75rem !important;
+    border-radius: 1rem !important;
+  }
+  .hero-cta {
+    flex-direction: column;
+  }
+  .module-body {
+    padding: 0.75rem;
+  }
   .faq-section {
     padding: 4rem 0;
   }
