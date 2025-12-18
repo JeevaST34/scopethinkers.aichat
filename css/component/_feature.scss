@@ -1,0 +1,43 @@
+/* Feature Cards */
+.feature-item {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 32px;
+  border: 1px solid #ebe9e8;
+  transition: all 0.25s ease;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .feature-icon {
+    font-size: 32px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: white;
+    margin-bottom: 14px;
+  }
+
+  .feature-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+  }
+
+  .feature-text {
+    font-size: 16px;
+    color: #5a5a5a;
+    line-height: 1.55;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    border-color: transparent;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  }
+}

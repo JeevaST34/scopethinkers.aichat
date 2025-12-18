@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Your Account</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+  </head>
+
+  <body class="sign-body">
+    <div class="auth-wrapper">
+      <div class="auth-inner">
+        <!-- LEFT FORM -->
+        <div class="auth-form">
+          <!-- PRODUCT HEADING -->
+          <div class="product-heading">
+            <!-- <i class="fa-solid fa-robot"></i> -->
+            <span class="brand-name text-gradient-2 fw-bold fs-3"
+              >AI ChatBot</span
+            >
+            <span class="brand-stars">
+              <span class="star-icon star-up">✦</span>
+              <span class="star-icon star-down">✦</span>
+            </span>
+          </div>
+
+          <!-- STEPPER -->
+          <div class="step-progress">
+            <div class="step-node active" id="step-node-1">1</div>
+            <div class="step-line"></div>
+            <div class="step-node" id="step-node-2">2</div>
+            <div class="step-line"></div>
+            <div class="step-node" id="step-node-3">3</div>
+            <div class="step-line"></div>
+            <div class="step-node" id="step-node-4">4</div>
+          </div>
+
+          <h2>Create Your Account</h2>
+          <p class="subtitle">
+            Available at no cost for individuals. Team plans offer collaborative
+            features.
+          </p>
+
+          <!-- FORM BODY -->
+          <div class="form-body">
+            <div class="form-step active" id="step1">
+              <label>Company Name</label>
+              <input class="form-control mb-3" value="ajaycorp" />
+
+              <label>Company Domain</label>
+              <div class="input-group">
+                <input class="form-control" value="ajay" />
+                <span class="input-group-text">.com</span>
+              </div>
+            </div>
+
+            <div class="form-step" id="step2">
+              <label>First Name</label>
+              <input class="form-control mb-3" value="ajay" />
+              <label>Last Name</label>
+              <input class="form-control" value="m" />
+            </div>
+
+            <div class="form-step" id="step3">
+              <label>Email Address</label>
+              <input
+                class="form-control mb-3"
+                value="geetha.ajay12@gmail.com"
+              />
+              <label>Password</label>
+              <input type="password" class="form-control" value="P@ssword1" />
+            </div>
+
+            <div class="form-step" id="step4">
+              <div class="success-icon">
+                <i class="fa fa-check"></i>
+              </div>
+              <div class="summary-box">
+                <div class="summary-row">
+                  <span>Company</span><span>ajaycorp</span>
+                </div>
+                <div class="summary-row">
+                  <span>Name</span><span>ajay m</span>
+                </div>
+                <div class="summary-row">
+                  <span>Email</span><span>geetha.ajay12@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOOTER -->
+          <div class="form-footer">
+            <button class="btn btn-prev" id="prevBtn" disabled>Previous</button>
+            <button class="btn btn-next" id="nextBtn">Next</button>
+            <button class="btn btn-submit" id="submitBtn" style="display: none">
+              Get Started
+            </button>
+          </div>
+
+          <!-- LOADER -->
+          <div id="loadingOverlay">
+            <div class="spinner"></div>
+          </div>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="auth-image">
+          <img
+            src="https://images.unsplash.com/photo-1541560052-5e137f229371?q=80&w=687&auto=format&fit=crop"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let currentStep = 1;
+      const totalSteps = 4;
+
+      function showStep(step) {
+        document
+          .querySelectorAll(".form-step")
+          .forEach((s) => s.classList.remove("active"));
+        document.getElementById(`step${step}`).classList.add("active");
+
+        for (let i = 1; i <= totalSteps; i++) {
+          const node = document.getElementById(`step-node-${i}`);
+          node.classList.remove("active", "completed");
+          if (i < step) node.classList.add("completed");
+          if (i === step) node.classList.add("active");
+        }
+
+        prevBtn.disabled = step === 1;
+        nextBtn.style.display = step === totalSteps ? "none" : "inline-block";
+        submitBtn.style.display = step === totalSteps ? "inline-block" : "none";
+
+        currentStep = step;
+      }
+
+      nextBtn.onclick = () =>
+        currentStep < totalSteps && showStep(currentStep + 1);
+      prevBtn.onclick = () => currentStep > 1 && showStep(currentStep - 1);
+
+      submitBtn.onclick = () => {
+        loadingOverlay.style.display = "flex";
+        setTimeout(() => {
+          loadingOverlay.style.display = "none";
+          showStep(4);
+        }, 1200);
+      };
+    </script>
+  </body>
+</html>

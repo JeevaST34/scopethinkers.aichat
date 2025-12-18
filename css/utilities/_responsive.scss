@@ -1,0 +1,278 @@
+@media (max-width: 991px) {
+  .navbar-right {
+    justify-content: center;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    padding-top: 1rem;
+
+    .nav-link {
+      padding: 0.6rem 0;
+    }
+  }
+  .modern-toggler {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 100%);
+    border: 1px solid rgba(71, 98, 255, 0.15);
+    position: relative;
+    padding: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(71, 98, 255, 0.08);
+  }
+
+  .modern-toggler:hover {
+    box-shadow: 0 6px 20px rgba(71, 98, 255, 0.15);
+    transform: translateY(-2px);
+    border-color: rgba(71, 98, 255, 0.3);
+  }
+
+  .modern-toggler span {
+    position: absolute;
+    left: 14px;
+    width: 24px;
+    height: 3px;
+    background: linear-gradient(90deg, #4762ff 0%, #6b8cff 100%);
+    border-radius: 3px;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .modern-toggler span:nth-child(1) {
+    top: 17px;
+  }
+  .modern-toggler span:nth-child(2) {
+    top: 24.5px;
+  }
+  .modern-toggler span:nth-child(3) {
+    top: 32px;
+  }
+
+  .modern-toggler.open {
+    background: linear-gradient(135deg, #4762ff 0%, #6b8cff 100%);
+    border-color: transparent;
+  }
+
+  .modern-toggler.open span {
+    background: white;
+    left: 14px;
+    height: 3px;
+  }
+
+  .modern-toggler.open span:nth-child(1) {
+    top: 24.5px;
+    transform: rotate(45deg);
+  }
+  .modern-toggler.open span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  .modern-toggler.open span:nth-child(3) {
+    top: 24.5px;
+    transform: rotate(-45deg);
+  }
+  .navbar-collapse {
+    box-shadow: var(--shadow-xl);
+    padding: 15px 30px;
+    border-radius: 11px;
+    margin-top: 10px;
+  }
+  .analytics-section {
+    text-align: center;
+  }
+
+  .analytics-subtitle {
+    margin-inline: auto;
+  }
+
+  .analytics-list {
+    display: inline-block;
+    text-align: left;
+  }
+  .workflow-section {
+    text-align: center;
+  }
+
+  .workflow-subtitle {
+    margin: 0 auto;
+  }
+
+  .workflow-list {
+    display: inline-block;
+    text-align: left;
+  }
+  .testi-btn {
+    justify-content: center;
+  }
+  .testi-left {
+    text-align: center;
+  }
+  .custom-section {
+    text-align: center;
+  }
+  .custom-subtitle {
+    margin-inline: auto;
+  }
+
+  .custom-video-card {
+    justify-content: center;
+  }
+  .hero-chat-frame {
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .integrations-section {
+    text-align: center;
+  }
+
+  .integrations-subtitle {
+    margin-inline: auto;
+  }
+
+  .integrations-media-wrapper {
+    margin-top: 1.5rem;
+  }
+  .knowledge-section {
+    text-align: center;
+  }
+
+  .knowledge-subtitle {
+    margin-inline: auto;
+  }
+
+  .knowledge-list {
+    display: inline-block;
+    text-align: left;
+  }
+  .realtime-section {
+    text-align: center;
+  }
+
+  .realtime-subtitle {
+    margin-inline: auto;
+  }
+
+  .realtime-list {
+    display: inline-block;
+    text-align: left;
+  }
+  .routing-section {
+    text-align: center;
+  }
+
+  .routing-subtitle {
+    margin-inline: auto;
+  }
+
+  .routing-list {
+    display: inline-block;
+    text-align: left;
+  }
+  .testimonial-card {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+
+  .testi-controls {
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .testimonials-section {
+    text-align: left;
+  }
+  .workflow-right {
+    text-align: center;
+  }
+  .testi-carousel-wrapper {
+    .testimonial-card {
+      min-width: calc(50% - 0.75rem);
+    }
+  }
+  .side-badge {
+    display: none !important;
+  }
+  .feature-hero-section .feature-hero-title {
+    font-size: 2.5rem;
+  }
+  .feature-automation-section .feature-automation-title {
+    font-size: 2rem;
+  }
+  .hero-section {
+    padding: 60px 0;
+  }
+  .knowledge-hero-section {
+    padding: 60px 0;
+  }
+  .ai-visual {
+    height: auto;
+  }
+  .upload-zone-light {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 4rem 0;
+  }
+
+  .faq-title {
+    font-size: 2.2rem;
+  }
+
+  .faq-question {
+    padding: 1.25rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  .faq-answer-content {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .knowledge-hero-section {
+    padding: 90px 0;
+  }
+  .compliance-title {
+    font-size: 28px;
+  }
+  .compliance-badge img {
+    max-height: 110px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-bottom-image-wrapper {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .faq-title {
+    font-size: 1.9rem;
+  }
+
+  .faq-box {
+    padding: 0.5rem;
+  }
+  .testi-carousel-wrapper {
+    .testimonial-card {
+      min-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .cta-section {
+    padding: 3.5rem 0 4rem;
+  }
+  .testimonial-card {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+  .form-footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

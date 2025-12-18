@@ -1,0 +1,121 @@
+/* Chat Demo Section */
+.chat-demo {
+  background-color: var(--bg-light);
+  border-radius: 24px;
+  padding: 24px;
+  position: relative;
+
+  .chat-bubble {
+    background-color: var(--color-white);
+    border-radius: 14px;
+    padding: 14px 18px;
+    max-width: 80%;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: var(--color-dark-blue);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+
+    &.user {
+      margin-left: auto;
+      background-color: var(--color-primary);
+      color: var(--color-white);
+    }
+  }
+}
+
+/* Marquee Section */
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+
+  .marquee-track {
+    display: flex;
+    gap: 4rem;
+    white-space: nowrap;
+    animation: marquee 28s linear infinite;
+
+    img {
+      height: 46px;
+      width: auto;
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Want to ask section */
+.want-ask-section {
+  .want-ask-box {
+    border-radius: 20px;
+    background-color: var(--color-white);
+    padding: 2rem;
+    box-shadow: 0 0 12px #f0f0ff;
+    border: 1px solid #e5e7eb;
+  }
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(220, 225, 255, 0) 0%,
+    rgba(220, 225, 255, 1) 50%,
+    rgba(220, 225, 255, 0) 100%
+  );
+  margin: 60px 0;
+}
+
+.trusted-label {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Marquee container */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Track that moves */
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  animation: marqueeScroll 45s linear infinite; /* SLOWER SPEED */
+}
+
+/* Logos */
+.trusted-logo-wrapper img {
+  height: 40px;
+  object-fit: contain;
+  filter: grayscale(0%);
+  transition: 0.3s ease;
+  max-width: fit-content;
+}
+
+.trusted-logo-wrapper img:hover {
+  transform: scale(1.05);
+}
+
+/* Smooth infinite scrolling animation */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
